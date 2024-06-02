@@ -41,7 +41,7 @@ export function CreateCourseForm({
         startCreateTransition(async () => {
           createCourseAction(data, revalidatePagePath)
         })
-      })} className={cn(className, "space-y-8")}>
+      })} className={cn(className, "space-y-4")}>
         <FormField
           control={form.control}
           name="name"
@@ -68,7 +68,7 @@ export function CreateCourseForm({
             </FormItem>
           )}
         />
-        <Button type='submit' disabled={isCreateTransition}>Добавить</Button>
+        <Button className='mt-8' type='submit' disabled={isCreateTransition}>Добавить</Button>
       </form>
     </Form>
   )
