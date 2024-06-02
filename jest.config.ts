@@ -15,6 +15,7 @@ const config: Config = {
     // ...
     '^@/(.*)$': '<rootDir>/components/$1',
   },
+  modulePathIgnorePatterns: ["<rootDir>/tests/"],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 }
  
