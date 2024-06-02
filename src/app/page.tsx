@@ -5,7 +5,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col p-8">
-      <h1>Courses</h1>
+      <h1>Courses List</h1>
       <CreateCourseForm revalidatePagePath='/' className='w-[300px] mb-10' />
       <CoursesList revalidatePagePath='/' />
     </main>
